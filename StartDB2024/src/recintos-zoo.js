@@ -31,7 +31,7 @@ class RecintosZoo {
         if (quantidade <= 0) {
             return { erro: "Quantidade inválida", recintosViaveis: false };
         }
-
+//erro apartir da aqui olhar sobre
         const infoAnimal = this.animais[animal];
         const espacoNecessario = infoAnimal.tamanho * quantidade;
         let recintosViaveis = [];
@@ -63,5 +63,5 @@ class RecintosZoo {
         return { erro: false, recintosViaveis: recintosViaveis.map(r => r.descricao) };
     }
 }
-
+//lógica instavel
 export { RecintosZoo as RecintosZoo };
